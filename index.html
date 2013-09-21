@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <title>FirefoxOS Troll app</title>
+  <script src="js/jquery-1.9.1.min.js"></script>
+  <style>
+      html {
+          height: 100%;
+          background-image: -moz-linear-gradient(top,#50FF4D,#1AC317);
+          background-repeat: repeat-x;
+      }
+  </style>
+</head>
+<body>
+<script type="text/javascript">
+    window.ondeviceproximity = function (event) {
+        if (event.value < 5) {
+           vibrating =  navigator.vibrate(2000);
+           $('html').css('background-image', '-moz-linear-gradient(top,#FA495B,#DE0D22)');
+
+        } else {
+            vibrating =  navigator.vibrate(0);
+            $('html').css('background-image', '-moz-linear-gradient(top,#50FF4D,#1AC317)');
+        }
+    }
+</script>
+<div align=center>
+  <img style="width: 150px; height: auto; margin: 170px 0px 0px 0px;" src="img/troll.png">
+</div>
+</body>
+</html>

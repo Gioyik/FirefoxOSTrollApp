@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "name": "Firefox OS Troll app",
+  "description": "Firefox OS Troll app is a demo app to learn how to use Vibration API and Proximity API into your new app.",
+  "launch_path": "/index.html",
+  "icons": {
+    "64": "/img/icons/icon-64x64.png"
+  },
+  "developer": {
+    "name": "Giovanny Andres Gongora Granada",
+    "url": "https://github.com/Gioyik"
+  },
+  "installs_allowed_from": ["*"]
+}
